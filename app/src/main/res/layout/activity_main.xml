@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="number|numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.98"
+            android:text="Reset Data" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Calculated Date:" />
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Calculate BMI: 0.0" />
+
+    <TextView
+        android:id="@+id/tvBMIDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
